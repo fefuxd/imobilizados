@@ -1,0 +1,470 @@
+html, body {
+	width: 100%;
+	height: 100%;
+    background-color: #edf0f5;
+    overflow-x: hidden;
+	-webkit-overflow-scrolling: touch; /* deixa a rolagem suave */
+}
+
+#topo {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    top: 0;
+    left: 0;
+    position: fixed;
+	display: block;
+    background-color: #3e4f69;
+    border-bottom: 1px solid #283851;
+    z-index: 100; 
+	-webkit-overflow-scrolling: touch; /* deixa a rolagem suave */
+}
+
+.logoff {
+    width: auto;
+    height: 45px;
+    float: right;
+    margin-right: 30px;
+	-webkit-overflow-scrolling: touch; /* deixa a rolagem suave */
+}
+
+.logo {
+    width: 130px;
+    height: 45px;
+    line-height: 30px;
+    float: left;
+    margin-left: 0px;
+	margin-top: 0px;
+}
+
+#lateral {
+    width: 110px;
+    height: 100%;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    background-color: #edf0f5;
+    border-right: 1px solid #c4d2df;
+}
+
+.inicio {
+    height: calc(100% - 45px);
+    background: url(../imagens/logo_vecol.png) no-repeat center;
+}
+
+#alerta {
+    width: auto;
+    height: 50px;
+    z-index: 400;
+    position: absolute;
+    top:50px;
+	left:50%;
+	margin-left:-100px;
+}
+
+#loginbox {
+    width: 400px;
+    height: 300px;
+    background-color: red;
+}
+
+.icone-menu {
+    font-size: 35px;
+}
+
+.no-padding {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#conteudo {
+    width: calc(100% - 110px);
+    height: calc(100% - 45px);
+    position: absolute;
+    top: 45px;
+    left: 110px;
+    background-color: #edf0f5;
+	-webkit-overflow-scrolling: touch; /* deixa a rolagem suave */
+}
+
+.header {
+    width: 100%;
+    height: 110px;
+    background-color: #edf0f5;
+    border-bottom: 1px solid #c1d2dc;
+	-webkit-overflow-scrolling: touch; /* deixa a rolagem suave */
+	
+}
+
+.titulo-box-texto {
+    width: auto;
+    height: 110px;
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.titulo-box-botao {
+    width: auto;
+    height: 110px;
+    float: right;
+    padding-top: 20px;
+    margin-right: 30px;
+	
+}
+
+.titulo-texto {
+    color: #485F7E;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 9px;
+}
+
+.botao-menu-topo {
+    border: 1px solid #2e91b0;
+    background-color: #3aafd2 !important;
+    color: #FFF !important;
+}
+
+h5 {
+    font-size: 12px;
+    color: #5C7496;
+}
+
+.busca-header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: #FFF;
+    border-bottom: 1px solid #becedb;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+label {
+    font-size: 13px;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', HelveticaNeue, Helvetica, Arial;
+    font-weight: bold;
+}
+
+.ajuste-row {
+    margin: 0;
+}
+
+#topo .btn-link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+/* TABELAS */
+
+tr th {
+    background-color: #3aafd2;
+    color: #FFF;
+	padding: 3px;
+}
+
+
+table {
+    background-color: #FFF;
+	
+	-webkit-overflow-scrolling: touch; /* deixa a rolagem suave */
+}
+
+
+/* AUTO-COMPLETE */
+
+.ui-autocomplete {
+    background-color: #FFF;
+    max-width: 300px;
+    border: 1px solid #222222;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.ui-menu-item:hover {
+    background-color: #3aafd2;
+    color: #FFF;
+    cursor: pointer;
+}
+
+
+
+/* PAINEL */
+
+.panel-default {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.panel-heading {
+    color: #78879C;
+    font-size: 18px;
+}
+
+.indiceEntrada {
+    color: #7B85A0;
+    font-weight: 600;
+}
+
+.indiceValor {
+    color: #434343;
+    font-weight: normal;
+}
+
+.user-time {
+    color: dimgrey;
+    font-size: 12px;
+}
+
+.user-post {
+    color: dodgerblue;
+    font-size: 14px;
+}
+
+.panel-footer {
+    height: 52px;
+}
+
+/* MENU */
+#sidebar {
+    background-color: #edf0f5;
+    padding: 0px;
+    text-align: center;
+}
+
+#sidebar.nav > li > a {
+    height: 110px;
+    padding-top: 30px;
+}
+
+#sidebar a:hover, a:focus {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#sidebar.nav > li > a,
+#sidebar.nav > li > a:link {
+    background-color: #edf0f5;
+    color: #adbcc9;
+}
+
+#sidebar.nav > li > a:hover,
+#sidebar.nav > li > a:focus {
+    background-color: #f5f6f8;
+    color: #6f889d;
+}
+
+#sidebar.nav-pills > li.active > a,
+#sidebar.nav-pills > li.active > a:hover,
+#sidebar.nav-pills > li.active > a:focus {
+    background-color: #f5f6f8;
+    color: #6f889d;
+}
+
+
+/* ABAS (TABS) */
+
+.nav-tabs {
+    background-color: #f5f5f5;
+}
+
+.panel-size {
+    min-height: auto;
+    max-height: 336px;
+    overflow-y: show;
+    overflow-x: hidden;
+}
+
+
+/* FOTO DETALHE CLIENTE */
+
+.detalheFoto {
+    border: 1px solid #dddddd;
+    padding: 4px;
+}
+
+.fotoBox {
+    margin-bottom: 30px;
+}
+
+#fotoTirada {
+    width: 240px;
+    height: 320px;
+    background-image: url(../imagens/cliente-detalhe-bg.png);
+}
+
+.molduraFoto {
+    padding: 8px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+
+
+
+ @media only screen and (max-width : 600px) {
+
+			
+			
+			
+			#topo{
+				width: 100%;
+				
+				
+				
+			}
+		  
+		  
+		  
+		  .container-fluid{
+			  margin-top: 25px;
+			 
+			  
+			  
+		  }
+		  
+		  .titulo-texto{
+			  margin:0px;
+			  margin-top: 5px;
+			  
+			  width: 100%;
+			  height: 20px;
+			  font-size: 18px;
+			  line-height: 10px;
+		  }
+		  
+		  h5 {
+			  margin-top: -20px;
+			  padding: 0px;
+		  }
+		  
+		  .titulo-box-texto{
+			  margin: 0px;
+			  padding: 5px;
+			  width: 100%;
+			  height: 25px;  
+		  }
+		  
+		  .header {
+			  height: 18px;
+			  
+			  
+			  
+		  }
+		  
+		  
+		  #lateral {
+			  display:none;
+		  }
+		  
+		  #conteudo {
+			  
+			  position: static;
+			  width: 100%;
+			  
+			  
+		  }
+		  
+		  .busca-header {
+			  height: 120px;
+			  margin-top: 0px;
+			  
+			  
+		  }
+		  
+		  .form-group {
+			  height: 50px;
+			  margin-bottom: 5px;
+			  padding: 6px;
+			  
+			  text-align: center;
+			  
+			  
+		  }
+		  
+		  .form-inline {
+			  height: 80px;
+			  margin-bottom: 0px;
+			  
+			  width: 100%;
+		  }
+		  
+		  label[for="revenda"] {
+			  
+			  display: none;
+			  
+		  }
+		  
+		  .form-control{
+			  width: 31%;
+			  float: left;
+			  margin-top: 0px;
+			  text-align: center;		  
+			  height: 40px;
+			  margin-right: 5px;
+			  
+		  }
+		  
+		  #bemdesc{
+			  width: 98%;	  
+			  text-align: center;
+			  float: center;
+			  position: center;
+			  margin-left: 3px;
+			  margin-top: -10px;
+		  }
+		  
+		  		  
+		  .btn{
+			  margin-top: 10px;
+			  margin-right: 5px;
+			  height: 25px;
+			  float: right;
+			  
+			  
+			  
+		  }
+		  
+		 #pesquisar {
+			display:none;
+		 }
+		
+		 table {
+			 margin-top: 3px;
+			 max-width: 100%;
+			 width: 100%;
+			
+		 }
+		 
+		a {
+			margin: 0 auto;
+			float: right;
+			height: 0px;
+			margin-top: -20px;
+			
+		}
+		
+		.logo2 {
+			margin-top: 20px;
+			line-height: 30px;
+			float: left;
+			position: absolute;
+		}			
+  
+ }
+
+ 
+ 
